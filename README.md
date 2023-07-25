@@ -1,5 +1,10 @@
 # 🚀 Deployed on [DigitalOcean](https://nextjs-strapi-cms-45gnt.ondigitalocean.app)
 
+### `Storage space for media by creating Spaces in DigitalOcean`
+Installed [strapi-provider-upload-do](https://www.npmjs.com/package/strapi-provider-upload-do)
+```
+npm i strapi-provider-upload-do
+```
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
