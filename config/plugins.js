@@ -1,12 +1,15 @@
-module.exports = ({ env }) => ({
-    "vercel-deploy": {
-      enabled: true,
-      config: {
-        deployHook: process.env.VERCEL_DEPLOY_PLUGIN_HOOK,
-        apiToken: process.env.VERCEL_DEPLOY_PLUGIN_API_TOKEN,
-        appFilter: process.env.VERCEL_DEPLOY_PLUGIN_APP_FILTER,
-        teamFilter: process.env.VERCEL_DEPLOY_PLUGIN_TEAM_FILTER,
-        roles: ["strapi-super-admin"],
-      },
+module.exports = ({env}) => ({
+  // ...
+  upload: {
+    config: {
+      provider: "strapi-provider-upload-do", 
+      providerOptions: {
+        key: env('DO_SPACE_ACCESS_KEY'),
+        secret: env('DO_SPACE_SECRET_KEY'),
+        endpoint: env('DO_SPACE_ENDPOINT'),
+        space: env('DO_SPACE_BUCKET'),
+      }
     },
-  });
+  }, 
+  // ...
+})

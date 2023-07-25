@@ -19,6 +19,7 @@
     "pg": "^8.11.1",
     "pg-connection-string": "^2.6.1",
     "sqlite3": "^5.1.6",
-    "strapi-plugin-vercel-deploy": "^1.4.0"
+    "strapi-plugin-vercel-deploy": "^1.4.0",
+    "strapi-provider-upload-do": "^3.6.9"
   }
 }
