@@ -1,8 +1,10 @@
+import fetch from 'node-fetch';
 import { writeFileSync } from "node:fs";
 import qs from "qs";
 
 const url =
-  "http://localhost:1337/api/reviews" +
+  // "http://localhost:1337/api/reviews" +
+  "https://nextjs-strapi-cms-45gnt.ondigitalocean.app/api/reviews" +
   "?" +
   qs.stringify(
     { //have to use fields based on strapi documentation
